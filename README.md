@@ -38,3 +38,7 @@ Napisati program koji će omogućiti korisniku da unese veličinu jednodimenzion
 
 
 **ZADATAK 7**
+
+Kreirati jednodim dinam niz n velicine i napuniti ga serijom kubova svakog proslog broja pocevsi od 2. Prekida se kada se deesi overflow, napuni niz.Ispisati niz rekurzivno!
+
+Koristiti aritmetiku pointera!
