@@ -17,8 +17,9 @@ Napisati program koji će omogućiti korisniku da unese veličinu jednodimenzion
 
 **ZADATAK 3**
 
+Napisati program koji će omogućiti korisniku da unese veličinu jednodimenzionalnog dinamičkog niza integer vrijednosti. Napisati funkciju koja će taj niz popuniti serijom Fibonacci brojeva počevši od broja 1. Za pronalazenje elemenata Fibonacci serije obavezno koristiti rekurzivnu funkciju. Punjenje niza se prekida kada se popuni cijeli niz ili kada se desi overflow na integer varijabli.
 
-
+(U ovom zadatku je zabranjeno indeksirati niz uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)
 
 **ZADATAK 4**
 
