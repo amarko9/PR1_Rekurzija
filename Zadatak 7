@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+void rekurzija(long long int* niz, int vel, int brojac = 0)
+{
+	if (brojac == vel)
+		return;
+	if (brojac == 0)
+		*(niz + brojac) = 2;
+	else
+		*(niz + brojac) = pow(*(niz + brojac - 1), 3);
+
+	rekurzija(niz, vel, brojac + 1);
+}
+
+void ispis(long long int* niz, int vel, int brojac = 0)
+{
+	
+	if (brojac == vel)
+		return;
+	else
+		cout << *(niz + brojac) << endl;
+
+	ispis(niz, vel, brojac + 1);
+}
+
+
+int main()
+{
+	int vel;
+	cout << "Unesite velicinu niza: "; cin >> vel;
+	long long int* niz = new long long int[vel];
+
+	rekurzija(niz, vel);
+	ispis(niz, vel);
+}
