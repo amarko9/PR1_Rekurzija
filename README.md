@@ -23,7 +23,9 @@ Napisati program koji će omogućiti korisniku da unese veličinu jednodimenzion
 
 **ZADATAK 4**
 
+Napisati program koji će omogućiti korisniku da unese veličinu jednodimenzionalnog dinamičkog niza integer vrijednosti. Napisati rekurzivnu funkciju koja će taj niz popuniti faktorijelom rednog broja člana niza (1!, 2!, 3!, 4!...). Rekurzija se prekida kada se popuni cijeli niz ili kada se desi overflow na integer varijabli. U ovom zadatku je zabranjeno indeksirati elemente niza uglastim zagradama.
 
+(Obavezno koristiti aritmetiku pokazivača. Obavezno sve riješiti jednom rekurzivnom funkcijom.)
 
 **ZADATAK 5**
 
