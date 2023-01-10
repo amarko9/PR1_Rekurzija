@@ -1,0 +1,83 @@
+#include<iostream>
+using namespace std;
+
+void rekurzija(int* niz, int vel, int brojac = 0)
+{
+	if (brojac == vel)
+		return;
+	if (brojac == 0)
+		*(niz + brojac) = 2;
+	else
+		*(niz + brojac) = *(niz + brojac - 1) * 2;
+
+	rekurzija(niz, vel, brojac + 1);
+}
+
+void ispis(int* niz, int vel, int brojac = 0)
+{
+	if (brojac == vel)
+		return;
+	else
+		cout << *(niz + brojac) << " ";
+
+	ispis(niz, vel, brojac + 1);
+}
+
+
+bool provjera(int* niz, int vel,int izbor, int brojac=0)
+{
+	if (brojac == vel)
+		return false;
+	else if (*(niz + brojac) == izbor)
+		return true;
+
+	provjera(niz, vel, izbor, brojac + 1);
+}
+
+
+int main()
+{
+	int vel;
+	do
+	{
+		cout << "Unesite velicninu niza: "; cin >> vel;
+	} while (vel<0);
+
+	int* niz = new int[vel];
+
+	rekurzija(niz, vel);
+	ispis(niz, vel);
+	cout << endl;
+	int izbor;
+		do
+		{
+			cout << "Unesite broj za provjeru da li taj broj postoji u nizu: "; cin >> izbor;
+		} while ( izbor < 0);
+
+		if (provjera(niz, vel, izbor))
+			cout << "Broj koji ste unijeli nalazi se u navedenom nizu!" << endl;
+
+		else
+			cout << "Broj koji ste unijeli se ne nalazi u navedenom nizu! " << endl;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
